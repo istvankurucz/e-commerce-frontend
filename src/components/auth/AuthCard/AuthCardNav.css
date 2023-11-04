@@ -1,0 +1,30 @@
+.authCardNav {
+	width: 3rem;
+	position: absolute;
+	top: -1rem;
+}
+.authCardNav--back {
+	left: -1rem;
+}
+.authCardNav--next {
+	right: -1rem;
+}
+
+.authCardNav__link {
+	color: hsl(var(--light-color));
+}
+
+@media (max-width: 576px) {
+	.authCardNav {
+		left: -0.5rem;
+	}
+}
+
+@media (max-height: 675px) {
+	.authCardNav {
+		top: 0;
+	}
+	.authCardNav--back {
+		left: 0rem;
+	}
+}

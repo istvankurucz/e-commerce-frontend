@@ -1,0 +1,17 @@
+.backToHome {
+	display: inline-flex;
+	gap: 0.5rem;
+	align-items: center;
+	font-size: 0.7rem;
+	text-decoration: none;
+	color: hsl(var(--gray-color));
+	padding-block: 0.7rem;
+	margin-left: 0.5rem;
+}
+.backToHome:hover {
+	text-decoration: underline;
+}
+
+.backToHome svg {
+	font-size: 0.6rem;
+}

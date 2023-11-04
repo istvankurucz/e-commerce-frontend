@@ -1,0 +1,17 @@
+.authCard {
+	width: 95%;
+	max-width: 450px;
+	height: 80vh;
+	background: hsl(var(--light-color) / 0.95);
+	border-radius: var(--br);
+	box-shadow: 0rem 0rem 1rem hsl(var(--light-color) / 0.2);
+	padding: 2rem;
+	position: relative;
+}
+
+@media (max-height: 675px) {
+	.authCard {
+		height: 95vh;
+		overflow-y: auto;
+	}
+}

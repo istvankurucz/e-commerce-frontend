@@ -1,0 +1,73 @@
+.input {
+	width: fit-content;
+	position: relative;
+}
+.input::before,
+.input::after {
+	content: "";
+	height: 2px;
+	background: hsl(var(--gray-color));
+	border-radius: var(--br-pill);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.input::after {
+	background: hsl(var(--primary-color));
+	right: 100%;
+	transition: right 400ms linear;
+}
+.input:focus-within::after,
+.input:has(.input__input:not(:placeholder-shown))::after {
+	right: 0;
+}
+
+.input--fullWidth {
+	width: 100%;
+}
+
+.input__header {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	margin-bottom: 0.2rem;
+}
+
+.input__label {
+	display: inline-block;
+	font-size: 0.8rem;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+	color: hsl(var(--gray-color));
+	transition: color 300ms linear;
+}
+.input:has(.input__input:focus) .input__label,
+.input:has(.input__input:not(:placeholder-shown)) .input__label {
+	color: hsl(var(--primary-color));
+}
+
+.input__password {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.input__input {
+	width: 100%;
+	background: none;
+	border: none;
+	padding: 0.3rem;
+	outline: none;
+}
+
+.input__password__button {
+	width: 2.2rem;
+	aspect-ratio: 1/1;
+	padding: 0;
+}
+
+.input__password__button svg {
+	font-size: 0.9rem;
+	color: hsl(var(--dark-color) / 0.9);
+}

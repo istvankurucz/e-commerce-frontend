@@ -1,0 +1,33 @@
+.nav__cartItem {
+	display: flex !important;
+	gap: 1rem;
+	padding-block: 0.2rem;
+}
+
+.nav__cartItem__img {
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: var(--br);
+}
+
+.nav__cartItem__name {
+	margin-bottom: 0.5rem;
+}
+
+.nav__cartItem__price {
+	display: inline-block;
+	font-size: 0.9rem;
+	margin-right: 0.3rem;
+}
+
+.nav__cartItem__qunatity {
+	font-size: 0.9rem;
+}
+
+.nav__cartItem__subtotal {
+	font-style: italic;
+	font-weight: 500;
+	margin-block: auto;
+	margin-left: auto;
+}

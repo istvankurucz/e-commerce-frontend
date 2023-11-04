@@ -1,0 +1,12 @@
+.authBg {
+	--bg-opacity: 0.9;
+
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background: linear-gradient(
+		to top right,
+		hsl(var(--primary-color) / var(--bg-opacity)),
+		hsl(var(--secondary-color) / var(--bg-opacity))
+	);
+}

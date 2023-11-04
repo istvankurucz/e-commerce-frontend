@@ -1,0 +1,92 @@
+.nav {
+	height: var(--nav-height);
+	display: grid;
+	place-items: center;
+	background: hsl(var(--primary-color));
+	padding: 0.3rem 1rem;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+
+.nav__container {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__logo {
+	font-style: italic;
+	font-weight: 700;
+	text-decoration: none;
+	color: hsl(var(--light-color));
+}
+
+.nav__search {
+	flex: 1;
+	max-width: 500px;
+	align-self: stretch;
+	display: flex;
+	background: hsl(var(--light-color));
+	border-radius: var(--br-pill);
+	padding-inline: 0.5rem;
+	transition: box-shadow 200ms ease;
+}
+.nav__search::before,
+.nav__search::after {
+	content: none;
+}
+.nav__search:focus-within {
+	box-shadow: 0 0 0 0.2rem hsl(var(--light-color) / 0.5);
+}
+
+.nav__menu {
+	display: flex;
+	gap: 1.5rem;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+}
+
+.nav__menu__item--profile {
+	position: relative;
+}
+.nav__menu__item--profile:hover .nav__submenu {
+	display: block;
+}
+
+.nav__menu__item--cart:hover .nav__submenu {
+	display: block;
+}
+
+.nav__menu__item > a {
+	display: grid;
+	place-items: center;
+}
+
+.nav__menu__item--profile img {
+	width: 35px;
+	aspect-ratio: 1 / 1;
+}
+
+.nav__cart {
+	color: hsl(var(--light-color));
+	position: relative;
+}
+
+.nav__cart__indicator {
+	width: 1rem;
+	height: 1rem;
+	display: grid;
+	place-items: center;
+	font-size: 0.7rem;
+	font-weight: 500;
+	background: hsl(var(--dark-color));
+	border-radius: var(--br-pill);
+	position: absolute;
+	top: -0.2rem;
+	right: -0.2rem;
+}

@@ -1,0 +1,35 @@
+.cart {
+	padding: 1rem;
+	padding-top: 0;
+}
+
+.cart__main {
+	display: flex;
+	gap: 2rem;
+}
+
+.cart__items {
+	flex: 1;
+}
+
+.cart__items > * {
+	margin-bottom: 1rem;
+}
+
+.cart__noItem {
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.cart__noItem__link {
+	color: hsl(var(--primary-color));
+}
+.cart__noItem__link:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.cart__main {
+		flex-direction: column-reverse;
+	}
+}

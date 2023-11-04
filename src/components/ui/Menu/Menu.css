@@ -1,0 +1,16 @@
+.menu {
+	--top: 2rem;
+
+	display: none;
+	list-style: none;
+	background: hsl(var(--light-color));
+	border-radius: var(--br);
+	box-shadow: 0 0 0.5rem hsl(var(--dark-color) / 0.5);
+	padding-block: 0.4rem;
+	position: absolute;
+	top: var(--top);
+	right: 0;
+}
+.menu--show {
+	display: block;
+}

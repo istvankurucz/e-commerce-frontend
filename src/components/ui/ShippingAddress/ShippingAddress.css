@@ -1,0 +1,39 @@
+.shippingAddress {
+	font-size: 0.9rem;
+}
+
+.shippingAddress__top {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+.shippingAddress__name {
+	font-weight: 700;
+}
+
+.shippingAddress__link {
+	font-size: 0.8rem;
+	text-decoration: none;
+	color: hsl(var(--primary-color));
+}
+.shippingAddress__link:hover {
+	text-decoration: underline;
+}
+
+.shippingAddress__country {
+	margin-bottom: 0.3rem;
+}
+
+.shippingAddress__noUser {
+	text-align: center;
+}
+
+.shippingAddress__noUser__link {
+	display: block;
+	margin-top: 0.5rem;
+}
+.shippingAddress__noUser__link:hover {
+	text-decoration: underline;
+}

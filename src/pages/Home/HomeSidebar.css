@@ -1,0 +1,75 @@
+.homeSidebar {
+	--width: 250px;
+
+	width: 0;
+	flex-shrink: 0;
+	height: calc(100vh - var(--nav-height));
+	padding: 0;
+	overflow-y: auto;
+	overflow: hidden;
+	position: sticky;
+	top: var(--nav-height);
+	transition: width var(--transition-time) linear, padding var(--transition-time) linear;
+}
+.homeSidebar::after {
+	content: "";
+	width: 0.7rem;
+	background: linear-gradient(to left, hsl(var(--gray-color) / 0.2), transparent);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+.homeSidebar--show {
+	width: var(--width);
+	padding: 1rem 0.5rem;
+	transition: width var(--transition-time) linear var(--transition-time),
+		width var(--transition-time) linear var(--transition-time),
+		padding var(--transition-time) linear var(--transition-time);
+}
+
+.homeSidebar__title {
+	margin-bottom: 1rem;
+}
+
+.homeSidebar__expand {
+	width: 2rem;
+	height: 2rem;
+	display: grid;
+	place-items: center;
+	position: absolute;
+	top: 0.7rem;
+	right: 0.7rem;
+}
+
+.homeSidebar__expand svg {
+	font-size: 0.8rem;
+}
+
+.homeSidebar__categories {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.homeSidebar__category {
+	color: hsl(var(--gray-color));
+	border-radius: var(--br);
+	padding: 0.3rem;
+}
+.homeSidebar__category:hover {
+	color: hsl(var(--dark-color));
+	background: hsl(var(--dark-color) / 0.1);
+}
+
+.homeSidebar__category a {
+	display: flex;
+	gap: 0.5rem;
+	text-decoration: none;
+	color: inherit;
+}
+
+.homeSidebar__category svg {
+	width: 20px;
+	color: hsl(var(--dark-color));
+}

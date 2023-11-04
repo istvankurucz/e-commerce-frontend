@@ -1,0 +1,9 @@
+.authCardBody {
+	min-width: 200px;
+	width: 100%;
+	max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-inline: auto;
+}

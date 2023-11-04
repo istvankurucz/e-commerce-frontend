@@ -1,0 +1,36 @@
+.success {
+	height: calc(100vh - var(--nav-height));
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.success__bg {
+	font-size: 20rem;
+	color: hsl(var(--gray-color) / 0.2);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+	rotate: -30deg;
+	z-index: -1;
+}
+
+.success__info {
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.success__highlight {
+	color: hsl(var(--success-color));
+}
+
+.success__redirect {
+	color: hsl(var(--primary-color));
+}
+.success__redirect:hover {
+	text-decoration: underline;
+}

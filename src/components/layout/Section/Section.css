@@ -1,0 +1,35 @@
+.section {
+	--text-color: hsl(var(--dark-color));
+	--bg-color: hsl(var(--light-color));
+
+	color: var(--text-color);
+	background: var(--bg-color);
+	padding: 1rem;
+}
+
+.section .section__container {
+	margin-block: 2rem;
+}
+
+/* #region variants */
+.section--dark {
+	--text-color: hsl(var(--light-color));
+	--bg-color: hsl(var(--dark-color));
+}
+
+.section--gradient {
+	--text-color: hsl(var(--light-color));
+	--bg-color: linear-gradient(to top right, hsl(var(--primary-color)), hsl(var(--secondary-color)));
+}
+/* #endregion */
+
+/* #region Styles */
+.section--tilted {
+	--skew: 3deg;
+	transform: skewY(calc(-1 * var(--skew)));
+}
+
+.section--tilted .section__container {
+	transform: skewY(var(--skew));
+}
+/* #endregion */

@@ -1,0 +1,25 @@
+.register__card {
+	position: relative;
+}
+
+.register__paging {
+	font-size: 0.8rem;
+	color: hsl(var(--gray-color));
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+.register__info {
+	margin-top: -0.5rem;
+}
+
+.register__info > .formText {
+	margin-bottom: 0.5rem;
+}
+
+.register__info__required {
+	display: flex;
+	gap: 0.3rem;
+	align-items: center;
+}

@@ -1,0 +1,78 @@
+/* #region General */
+.button {
+	--text-color: hsl(var(--light-color));
+	--bg-color: hsl(var(--primary-color));
+	--hover-color: hsl(var(--primary-color-hover));
+	--br: 0.75rem;
+
+	display: block;
+	color: var(--text-color);
+	background: var(--bg-color);
+	border: 0.15rem solid var(--bg-color);
+	border-radius: var(--br);
+	padding: 0.85rem 2rem;
+	transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+	cursor: pointer;
+}
+.button:hover {
+	background: var(--hover-color);
+	border-color: var(--hover-color);
+}
+.button:focus-visible {
+	outline-offset: 0.3rem;
+}
+/* #endregion */
+
+/* #region Variants */
+.button--dark {
+	--text-color: hsl(var(--light-color));
+	--bg-color: hsl(var(--dark-color));
+	--hover-color: hsl(var(--dark-color-hover));
+}
+
+.button--light {
+	--text-color: hsl(var(--dark-color));
+	--bg-color: hsl(var(--light-color));
+	--hover-color: hsl(var(--light-color-hover));
+}
+
+.button--gradient {
+	--text-color: hsl(var(--light-color));
+	--bg-color: linear-gradient(to top right, hsl(var(--primary-color)), hsl(var(--secondary-color)));
+	--hover-color: linear-gradient(to top right, hsl(var(--primary-color-hover)), hsl(var(--secondary-color-hover)));
+}
+
+.button--transparent {
+	--text-color: hsl(var(--dark-color));
+	--bg-color: transparent;
+	--hover-color: hsl(var(--dark-color) / 0.1);
+
+	border: none;
+}
+/* #endregion */
+
+/* #region Types */
+.button--outlined {
+	color: hsl(var(--primary-color));
+	background: transparent;
+}
+.button--outlined:hover {
+	color: hsl(var(--light-color));
+}
+
+.button--rounded {
+	border-radius: var(--br-pill);
+}
+
+.button--circle {
+	aspect-ratio: 1/1;
+	display: grid;
+	place-items: center;
+	border-radius: var(--br-pill);
+	padding: 0.5rem;
+}
+
+.button--fullWidth {
+	width: 100%;
+}
+/* #endregion */

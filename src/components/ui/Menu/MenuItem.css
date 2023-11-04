@@ -1,0 +1,15 @@
+.menuItem {
+	min-width: 100px;
+	padding: 0.3rem 0.7rem;
+	text-align: left;
+}
+.menuItem:hover {
+	background: hsl(var(--dark-color) / 0.1);
+}
+
+.menuItem a {
+	display: block;
+	color: hsl(var(--dark-color));
+	text-decoration: none;
+	text-align: left;
+}

@@ -1,0 +1,7 @@
+.requiredDot {
+	width: 6px;
+	height: 6px;
+	display: inline-block;
+	background: hsl(var(--primary-color));
+	border-radius: var(--br-pill);
+}

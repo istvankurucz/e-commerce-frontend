@@ -1,0 +1,16 @@
+.fancyPrice {
+	font-size: 1.2rem;
+	font-weight: 500;
+	font-style: italic;
+	position: relative;
+}
+.fancyPrice::after {
+	content: "";
+	height: 2px;
+	background: linear-gradient(to right, hsl(var(--primary-color)), hsl(var(--secondary-color)));
+	border-radius: var(--br-pill);
+	position: absolute;
+	bottom: -0.1rem;
+	left: 0;
+	right: 0;
+}
